@@ -80,13 +80,12 @@ public class SurveyActivity extends AppCompatActivity {
             }
         });
         Intent intent = getIntent();
-        setTheme(R.style.GoscliqueTheme);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor(intent.getStringExtra("navigationColor"))));
         getSupportActionBar().setTitle(Html.fromHtml("<font colour='"+intent.getStringExtra("navigationTextColor")+"'>"+intent.getStringExtra("navigationText")+"</font>"));
         String app_id = intent.getStringExtra("appId");
         String user_id = intent.getStringExtra("userId");
-        String url = "survey.gosclique.com/?appid="+app_id+"&uid="+user_id;
+        String url = "https://survey.gosclique.com/?appid="+app_id+"&uid="+user_id;
         webView.loadUrl(url);
     }
 
