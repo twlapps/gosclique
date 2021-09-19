@@ -6,8 +6,8 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application>
-        android:usesCleartextTraffic="true">
-        <activity android:name=".SurveyActivity" android:exported="true" />
+        android:usesCleartextTraffic="true"
+        <activity android:name=".SurveyActivity" android:theme="@style/AppTheme" android:exported="true" />
     </application>
 
 </manifest>
