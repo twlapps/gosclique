@@ -37,7 +37,7 @@ allprojects {
 ```
 dependencies { 
    ... 
-   implementation 'com.github.gosclique:gosclique-android:{version}' }
+   implementation 'com.github.twlapps:gosclique:1.0.3' }
 }
 ```
 
